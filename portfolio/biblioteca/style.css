@@ -1,0 +1,108 @@
+body {
+	/* background */
+	background-color: Azure;
+
+	/* texto */
+	font-family: Verdana;
+
+	/* alinhamento e tamanho */
+	width: 85%;
+	margin: auto;
+}
+
+section {
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-bottom: 20px;
+	padding-top: 1px;
+}
+
+#l1, #l2, #l3, #l4, #l5 {
+	background-color: powderblue;
+	margin-bottom: 25px;
+	border-radius: 10px;
+}
+
+.tituloL {
+	color: DarkCyan;
+	margin: 40px 0 20px;
+}
+
+.sinopse {
+	color: DarkCyan;
+}
+
+.textoSinopse {
+	color: teal;
+	text-align: justify;
+}
+
+.fonte {
+	color: teal;
+	font-weight: bold;
+}
+
+#tituloP {
+	text-align: center;
+	background-color: PowderBlue;
+	color: DarkCyan;
+	padding: 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+div, a, ul {
+	color: DarkCyan;
+	margin-bottom: 25px;
+}
+
+/*li {
+	text-align: center;
+	list-style-position: inside;
+}*/
+
+a:link {
+	color: DarkCyan;
+}
+
+a:hover {
+	color: Plum;
+}
+
+/* Tabela */
+
+table {
+	width: 100%;
+}
+
+th {
+	background: PowderBlue;
+	color: DarkCyan;
+	font-size: bold;
+}
+
+td {
+	background: Azure;
+	color: teal;
+}
+
+th, td {
+	border-width: 3px;
+	border-style: solid;
+	border-color: teal;
+	text-align: center;
+	padding: 8px;
+	border-radius: 10px;
+}
+
+img {
+	width: 25%;
+	display: block;
+	margin: left;
+	border-radius: 10px;
+
+}
+
+span {
+	font-weight: bold;
+}

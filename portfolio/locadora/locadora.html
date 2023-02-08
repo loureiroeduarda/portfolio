@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="img/filme.png">
+	<title>Family Video - Locadora</title>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	
+	<script type="text/javascript" src="javascript.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			
+			<img style="width:8%;" src="img/logo.png">
+			<a class="navbar-brand" href="#topo">Locadora</a>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" href="#tabFilmes">Filmes Disponíveis</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#drop" id="dropGeneros" role="button" data-bs-toggle="dropdown">Filmes por Categoria</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#gAcao">Ação</a></li>
+	 						<li><a class="dropdown-item" href="#gAnimacao">Animação</a></li>
+	 						<li><a class="dropdown-item" href="#gRomance">Romance</a></li>
+	 						<li><a class="dropdown-item" href="#gSuspense">Suspense</a></li>
+	 						<li><a class="dropdown-item" href="#gDrama">Drama</a></li>
+	 						<li><a class="dropdown-item" href="#gComedia">Comédia</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#cadFilmes">Cadastrar Filme</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<h1 class="display-1 text-center mb-5">Family Video Locadora</h1>
+
+	<div class="container">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th scope="col">Código</th>
+					<th scope="col">Título</th>
+					<th scope="col">Diretor</th>
+					<th scope="col">Lançamento</th>
+					<th scope="col">Gênero</th>
+					<th scope="col">Atriz/Ator Principal</th>
+					<th scope="col">Nota IMDb</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAcao">Ação</th>
+				</tr>
+				
+				<tr>
+					<th scope="row"> 1</th>
+					<td>Batman: O Cavaleiro das Trevas</td>
+					<td>Christopher Nolan</td>
+					<td>18 de julho de 2008</td>
+					<td>Ação</td>
+					<td>Christian Bale</td>
+					<td>9,0/1</td>
+				</tr>
+				<tr>
+					<th scope="row"> 2</th>
+					<td>O Império Contra-Ataca</td>
+					<td>Irvin Kershner</td>
+					<td>21 de julho de 1980</td>
+					<td>Ação</td>
+					<td>Mark Hamill</td>
+					<td>8,7/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 3</th>
+					<td>Django Livre</td>
+					<td>Quentin Tarantino</td>
+					<td>18 de janeiro de 2013</td>
+					<td>Ação</td>
+					<td>Jamie Foxx</td>
+					<td>8,4/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAnimacao">Animação</th>
+				</tr>
+
+				<tr>
+					<th scope="row"> 4</th>
+					<td>O Rei Leão</td>
+					<td>Rob Minkoff, Roger Allers</td>
+					<td>8 de julho de 1994</td>
+					<td>Animação</td>
+					<td>James Earl Jones (voz)</td>
+					<td>8,5/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 5</th>
+					<td>Procurando Nemo</td>
+					<td>Andrew Stanton, Lee Unkrich</td>
+					<td>4 de julho de 2003</td>
+					<td>Animação</td>
+					<td>Alexander Gould (voz)</td>
+					<td>8,2/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 6</th>
+					<td>Monstros S.A.</td>
+					<td>Pete Docter, David Silverman, Lee Unkrich</td>
+					<td>14 de novembro de 2001</td>
+					<td>Animação</td>
+					<td>Billy Crystal(vox) e John Goodman (voz)</td>
+					<td>8,1/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gRomance">Romance</th>
+				</tr>
+
+				<tr>
+					<th scope="row"> 7</th>
+					<td>Ghost: do outro lado da vida</td>
+					<td>Jerry Zucker</td>
+					<td>1 de novembro de 1990</td>
+					<td>Romance</td>
+					<td>Demi Moore, Patrick Swayze</td>
+					<td>7,1/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 8</th>
+					<td>Um dia</td>
+					<td>Lone Scherfig</td>
+					<td>19 de agosto de 2011</td>
+					<td>Romance</td>
+					<td>Anne Hathaway, Jim Sturgess, Patricia Clarkson</td>
+					<td>7,0/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 9</th>
+					<td>Diário de uma Paixão</td>
+					<td>Nick Cassavetes</td>
+					<td>13 de agosto de 2004</td>
+					<td>Romance</td>
+					<td>Ryan Gosling, Rachel McAdams, James Garner</td>
+					<td>7,8/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gSuspense">Suspense</th>
+				</tr>
+
+				<tr>
+					<th scope="row"> 10</th>
+					<td>Cidade de Deus</td>
+					<td>Fernando Meirelles, Kátia Lund</td>
+					<td>30 de agosto de 2002</td>
+					<td>Suspense</td>
+					<td>Alexandre Rodrigues</td>
+					<td>8,6/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 11</th>
+					<td>Garota Exemplar</td>
+					<td>David Fincher</td>
+					<td>2 de outubro de 2014</td>
+					<td>Suspense</td>
+					<td>Rosamund Pike</td>
+					<td>8,1/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 12</th>
+					<td>Cisne Negro</td>
+					<td>Darren Aronofsky</td>
+					<td>4 de fevereiro de 2011</td>
+					<td>Suspense</td>
+					<td>Natalie Portman, Mila Kunis, Vincent Cassel</td>
+					<td>8,0/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gDrama">Drama</th>
+				</tr>
+				
+				<tr>
+					<th scope="row"> 13</th>
+					<td>Um Sonho de Liberdade</td>
+					<td>Frank Darabont</td>
+					<td>17 de março de 1995</td>
+					<td>Drama</td>
+					<td>Morgan Freeman</td>
+					<td>9,3/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 14</th>
+					<td>O Poderoso Chefão</td>
+					<td>Francis Ford Coppola</td>
+					<td>7 de julho de 1972</td>
+					<td>Drama</td>
+					<td>Al Pacino</td>
+					<td>9,2/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 15</th>
+					<td>A Lista de Schindler</td>
+					<td>Steven Spielberg</td>
+					<td>31 de dezembro de 1993</td>
+					<td>Drama</td>
+					<td>Liam Neeson</td>
+					<td>9,0/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gComedia">Comédia</th>
+				</tr>
+				
+				<tr>
+					<th scope="row"> 16</th>
+					<td>As Branquelas</td>
+					<td>Keenen Ivory Wayans</td>
+					<td>27 de agostos de 2004</td>
+					<td>Comédia</td>
+					<td>Shawn Wayans, Marlon Wayans</td>
+					<td>5,7/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 17</th>
+					<td>Se beber, não case!</td>
+					<td>Todd Phillips</td>
+					<td>21 de agosto de 2009</td>
+					<td>Comédia</td>
+					<td>Bradley Cooper, Ed Helms, Zach Galifianakis</td>
+					<td>7,7/10</td>
+				</tr>
+				<tr>
+					<th scope="row"> 18</th>
+					<td>Deadpool</td>
+					<td>Tim Miller</td>
+					<td>11 de fevereiro de 2016</td>
+					<td>Comédia</td>
+					<td>Ryan Reynolds</td>
+					<td>8,0/10</td>
+				</tr>
+				<tr id="inserirTabela">
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="m-5">
+		<hr class="border-primary border-3 opacity-75">
+	</div>
+
+	<h2 class="text-center mb-5">Family Video Locadora</h2>
+	
+	<div class="container mb-5">
+		<form name="cadastrar" onsubmit="event.preventDefault()">
+			<div class="row">
+				<div class="mb-3 col">
+					<label for="codFilme" class="form-label">Código:</label>
+					<input type="text" id="codFilme" class="form-control" placeholder="00" name="codigo" required>
+				</div>
+					
+				<div class="mb-3 col">
+					<label for="anoFilme" class="form-label">Ano:</label>
+					<input type="date" id="anoFilme" class="form-control" name="data" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="mb-3 col">
+					<label for="tituloFilme" class="form-label">Título:</label>
+					<input type="text" id="tituloFilme" class="form-control" name="titulo" required>
+				</div>
+
+				<div class="mb-3 col">
+					<label for="dirFilme" class="form-label">Diretor:</label>
+					<input type="text" id="dirFilme" class="form-control" name="diretor" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="mb-3 col">
+					<label for="atoresFilme" class="form-label">Atriz/Ator Principal:</label>
+					<input type="text" id="atoresFilme" class="form-control" name="ator" required>
+				</div>
+
+				<div class="mb-3 col">
+					<label for="imdbFilme" class="form-label">Nota IMDb:</label>
+					<input type="text" id="imdbFilme" class="form-control" placeholder="0,0/10" name="nota" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGeneroAcao" class="form-check-input" value="Ação" required>
+					<label for="radGeneroAcao" class="form-label">Ação</label>
+				</div>
+
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGeneroAnimacao" class="form-check-input" value="Animação" required>
+					<label for="radGeneroAnimacao" class="form-label">Animação</label>
+				</div>
+				
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGeneroRomance" class="form-check-input" value="Romance" required>
+					<label for="radGeneroRomance" class="form-label">Romance</label>
+				</div>
+				
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGeneroSuspense" class="form-check-input" value="Suspense" required>
+					<label for="radGeneroSuspense" class="form-label">Suspense</label>
+				</div>
+
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGeneroDrama" class="form-check-input" value="Drama" required>
+					<label for="radGeneroDrama" class="form-label">Drama</label>
+				</div>	
+
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGeneroComedia" class="form-check-input" value="Comédia" required>
+					<label for="radGeneroComedia" class="form-label">Comédia</label>
+				</div>			
+			</div>
+
+			<div class="col-auto">
+				<button type="submit" class="btn btn-primary mb-3" onclick="insere()">Cadastrar</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
