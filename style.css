@@ -1,58 +1,3 @@
-/* texto hero image */
-.hero_titulo {
-	font-size: 4.5rem;
-}
-
-.hero_desc {
-	font-size: 2rem;
-}
-
-.hero-text {
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: black;
-}
-
-.bgimage {
-	height: 100vh;
-	background: url('img/heroImage.jpg');
-	background-size: cover;
-	position: relative;
-}
-
-/* imagem sobre */
-
-.imagemSobre {
-	width: 100%;
-}
-
-/* serviços */
-.servicesText.card {
-	height: 280px;
-	cursor: pointer;
-}
-
-.servicesIcon {
-	font-size: 36px;
-	text-align: center;
-	width: 100%;
-}
-
-.card-title {
-	text-align: center;
-}
-
-.card:hover .servicesIcon {
-	color: #008000;
-}
-
-.servicesText:hover {
-	border: 1px solid #008000;
-}
-
 /* menu */
 .navbar {
 	background-color: #483D8B;
@@ -87,4 +32,88 @@
 #sobre, #servicos, #portfolio, #contato {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
+}
+
+/* texto hero image */
+.hero_titulo {
+	font-size: 4.5rem;
+}
+
+.hero_desc {
+	font-size: 2rem;
+}
+
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+}
+
+.bgimage {
+	height: 100vh;
+	background: url('img/heroImage.jpg') 10%;
+	background-size: cover;
+	position: relative;
+}
+
+/* sobre */
+.sobre {
+	text-align: justify;
+}
+
+.sobre h5 {
+	margin-bottom: 15px;
+}
+
+.imagemSobre {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.btnSobre {
+	border: none;
+	border-radius: 5px;
+	padding: 10px 30px;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;	
+	font-size: 18px;
+	cursor: pointer;
+	background-color: violet;
+	color: white;
+	opacity: 1;
+  	transition: 0.3s;
+}
+
+.btnSobre:hover {
+	opacity: 0.6;
+  	color: white;
+}
+
+/* serviços */
+.servicesText.card {
+	height: 280px;
+	cursor: pointer;
+}
+
+.servicesIcon {
+	font-size: 36px;
+	text-align: center;
+	width: 100%;
+}
+
+.card-title {
+	text-align: center;
+}
+
+.card:hover .servicesIcon {
+	color: #008000;
+}
+
+.servicesText:hover {
+	border: 1px solid #008000;
 }
