@@ -1,15 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: FreeMono, monospace;
+    box-sizing: border-box;
+    color: #A0522D;
+}
+
 /* menu */
 .navbar {
-	background-color: #483D8B;
+	background-color: #FDF5E6;
 }
 
 .navbar a {
-	color: white;
+	color: #A0522D;
 }
 
 .navbar a:hover {
-	color: black;
-	background-color: #ddd;
+	color: #F4A460;
 }
 
 .contactIcon {
@@ -23,10 +30,10 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: rgba(255, 255, 255, 0.05);
+	background: rgba(255, 255, 255, 0.5);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(4.9px);
-	-webkit-backdrop-filter: blur(4.9px);
+	backdrop-filter: blur(5.5px);
+	-webkit-backdrop-filter: blur(5.5px);
 }
 
 #sobre, #servicos, #portfolio, #contato {
@@ -35,28 +42,20 @@
 }
 
 /* texto hero image */
-.hero_titulo {
-	font-size: 4.5rem;
-}
-
-.hero_desc {
-	font-size: 2rem;
-}
-
 .hero-text {
-	text-align: center;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: black;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+	color: #A0522D;
 }
 
 .bgimage {
-	height: 100vh;
 	background: url('img/heroImage.jpg') 10%;
 	background-size: cover;
-	position: relative;
+	background-position: relative;
+	height: 100vh;
+	width: 100%;
 }
 
 /* sobre */
@@ -73,7 +72,7 @@
 	border-radius: 5px;
 }
 
-.btnSobre {
+.btn_sobre {
 	border: none;
 	border-radius: 5px;
 	padding: 10px 30px;
@@ -83,31 +82,32 @@
 	text-decoration: none;	
 	font-size: 18px;
 	cursor: pointer;
-	background-color: violet;
-	color: white;
+	background-color: #A0522D;
+	color: #FDF5E6;
 	opacity: 1;
   	transition: 0.3s;
 }
 
-.btnSobre:hover {
+.btn_sobre:hover {
 	opacity: 0.6;
-  	color: white;
+  	color: #FDF5E6;
 }
 
-/* serviços */
+/* habilidades */
 .servicesText.card {
-	height: 280px;
+	text-align: justify;
+	height: 200px;
 	cursor: pointer;
 }
 
 .servicesIcon {
 	font-size: 36px;
-	text-align: center;
-	width: 100%;
+	text-align: left;
+	width: 50%;
 }
 
 .card-title {
-	text-align: center;
+	text-align: left;
 }
 
 .card:hover .servicesIcon {
@@ -116,4 +116,26 @@
 
 .servicesText:hover {
 	border: 1px solid #008000;
+}
+
+/* portfólio */
+.btn_portfolio {
+	border: none;
+	border-radius: 5px;
+	padding: 10px 30px;
+	width: 29%;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;	
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #A0522D;
+	color: #FDF5E6;
+	opacity: 1;
+  	transition: 0.3s;
+}
+
+.btn_portfolio:hover {
+	opacity: 0.6;
+  	color: #FDF5E6;
 }
