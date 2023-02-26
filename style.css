@@ -140,3 +140,10 @@
 	opacity: 0.6;
   	color: #FDF5E6;
 }
+
+/* contato */
+.mapa .mapa_conteudo {
+    padding: 3em 0;
+    max-width: 90%;
+    margin: 0 auto;
+}
