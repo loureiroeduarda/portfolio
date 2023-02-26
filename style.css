@@ -3,12 +3,13 @@
     margin: 0;
     font-family: FreeMono, monospace;
     box-sizing: border-box;
-    color: #A0522D;
+   	color: #A0522D;
 }
 
 /* menu */
 .navbar {
-	background-color: #FDF5E6;
+	background-color: #FFFAFA;;
+	letter-spacing: 1px;
 }
 
 .navbar a {
@@ -21,7 +22,7 @@
 
 .contactIcon {
 	font-size: 56px;
-	color: #483D8B;
+	color: #F4A460;
 }
 
 .glass {
@@ -60,16 +61,18 @@
 
 /* sobre */
 .sobre {
+	background-color: #FFFAFA;
 	text-align: justify;
 }
 
-.sobre h5 {
+.sobre h4 {
 	margin-bottom: 15px;
 }
 
-.imagemSobre {
+.imagem_sobre {
 	width: 100%;
-	border-radius: 5px;
+	margin-top: 50px;
+	border-radius: 5px;	
 }
 
 .btn_sobre {
@@ -94,31 +97,29 @@
 }
 
 /* habilidades */
-.servicesText.card {
+.habilidades {
+	padding: 100px 0px 50px 0px;
+}
+
+.card {
+	padding: 15px;
+}
+
+.card-img-top {
+	position: center;
+}
+
+.card-body {
 	text-align: justify;
-	height: 200px;
-	cursor: pointer;
-}
-
-.servicesIcon {
-	font-size: 36px;
-	text-align: left;
-	width: 50%;
-}
-
-.card-title {
-	text-align: left;
-}
-
-.card:hover .servicesIcon {
-	color: #008000;
-}
-
-.servicesText:hover {
-	border: 1px solid #008000;
 }
 
 /* portfólio */
+.portfolio {
+	background-color: #FFFAFA;
+	padding: 100px 0px 50px 0px;
+	
+}
+
 .btn_portfolio {
 	border: none;
 	border-radius: 5px;
