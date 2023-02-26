@@ -6,10 +6,6 @@
    	color: #A0522D;
 }
 
-@media only screen and (max-device-width: 900px) {
-	* { width: 100% }
-}
-
 /* menu */
 .navbar {
 	background-color: #FFFAFA;
