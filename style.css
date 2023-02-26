@@ -6,6 +6,10 @@
    	color: #A0522D;
 }
 
+@media only screen and (max-device-width: 900px) {
+	* { width: 100% }
+}
+
 /* menu */
 .navbar {
 	background-color: #FFFAFA;
@@ -54,7 +58,7 @@
 .bgimage {
 	background: url('img/heroImage.jpg') 10%;
 	background-size: cover;
-	background-position: relative;
+	position: relative;
 	height: 100vh;
 	width: 100%;
 }
