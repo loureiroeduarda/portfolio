@@ -16,10 +16,10 @@
 
 .pipe {
 	position: absolute;
-	bottom: 0;
-	width: 80px;
-	height: 112px;
-	animation: pipe-animation 3s infinite linear;
+	bottom: 0px;
+	width: 100px;
+	height: 100px;
+	animation: pipe-animation 2s infinite linear;
 }
 
 @keyframes pipe-animation {
@@ -38,7 +38,7 @@
 }
 
 .jump {
-	animation: jump 500ms infinite ease-out;
+	animation: jump 600ms infinite ease-out;
 }
 
 @keyframes jump {
@@ -61,6 +61,7 @@
 
 .clouds {
 	position: absolute;
+	top: 5px;
 	width: 550px;
 	animation: clouds-animation 20s infinite linear;
 }
