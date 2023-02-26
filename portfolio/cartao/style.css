@@ -1,43 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap');
 
 body {
-	background: #B4BEC9;
-	font-family: "Montserrat", sans-serif;
+	font-family: FreeMono, monospace;
+	display: inline-block;
 }
 
 .frame {
 	position: absolute;
-	background-color: #DEEFE7;
 	top: 50%;
 	left: 50%;
 	width: 400px;
 	height: 400px;
 	margin-top: -200px;
-	margin-left: -200px;
-	box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.6);
+	margin-left: -300px;
+	shadow: 0px 16px 16px rgba(0, 0, 0, 0.6);
+}
+
+.frame::after {
+	content:"";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	background: #159A9C;
+	filter: blur(50px);
+	z-index: -10;
 }
 
 .frame, .card {
+	background-color: transparent;
+	width: 604px;
+	height: 345px;
+	perspective: 1000px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.flip-me {
-	position: absolute;
-	top: 30%;
-	left: 85%;
-	font-size: 20px;
-	transform: rotate(-90deg);
-	color: #159A9C;
-}
-
-.front h1 {
-	font-family: satisfy, cursive;
-	font-size: 95px;
-	text-align: left;
-	margin: 16px 80px;
-	color: #002333;
 }
 
 .card:hover .flip {
@@ -47,15 +47,45 @@ body {
 }
 
 .flip {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
 	transform-style: preserve-3d;
 	transition: all 0.7s ease-in-out;
 }
 
+.front {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.front h2 {
+	font-family: FreeMono, monospace;
+	font-size: 50px;
+	margin: 20px 80px;
+	color: #002333;
+}
+
+.front h3 {
+	font-family: FreeMono, monospace;
+	font-size: 20px;
+	margin: 20px 30px;
+	color: #002333;
+}
+
 .front, .back {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
 	-webkit-backface-visibility: hidden;
 	width: 100%;
 	height: 100%;
 	background: #FFFFFF;
+	border-radius: 10px;
 }
 
 .card .back {
@@ -72,26 +102,29 @@ body {
 
 .back h2 {
 	font-size: 30px;
-	margin: 8px;
+	margin: 20px 30px;
 	color: #159A9C;
 }
 
 .back h3 {
 	color: #002333;
-	font-family: satisfy, cursive;
-	font-weight: 300;
+	font-family: FreeMono, monospace;
 	font-size: 32px;
-	margin: 32px;
+	margin: 50px;
 }
 
 .back p {
 	color: #002333;
-	font-family: satisfy, cursive;
-	font-weight: 300;
+	font-family: FreeMono, monospace;
 	font-size: 13px;
 	margin: 19px;
 }
 
 img {
 	width: 32px;
+}
+
+img:hover {
+	width: 40px;
+	cursor: pointer;
 }
