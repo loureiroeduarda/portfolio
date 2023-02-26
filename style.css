@@ -8,7 +8,7 @@
 
 /* menu */
 .navbar {
-	background-color: #FFFAFA;;
+	background-color: #FFFAFA;
 	letter-spacing: 1px;
 }
 
@@ -146,4 +146,23 @@
     padding: 3em 0;
     max-width: 90%;
     margin: 0 auto;
+}
+
+/* footer */
+.footer {
+	background-color: #FFFAFA;
+}
+
+.redes_sociais img {
+	width: 32px;
+	margin: 20px 0px 20px 0px;
+}
+
+.redes_sociais img:hover {
+	width: 40px;
+	cursor: pointer;
+}
+
+.copyright {
+	background-color: #FFFAFA;
 }
